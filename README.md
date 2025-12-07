@@ -33,22 +33,24 @@ PINECONE_INDEX_NAME=cat-exam-prep
 - OpenAI: https://platform.openai.com/api-keys
 - Pinecone: https://app.pinecone.io/ (sign up for free tier)
 
-### 3. Add Documents
 
-Place your CAT exam preparation PDFs in the `data/` directory:
-- Quantitative Aptitude materials
-- Verbal Ability resources
-- Data Interpretation guides
-- Previous year papers
-- Study materials
-
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`
+
+
+### 4. Add Documents
+
+Place your CAT exam preparation PDFs in the Document Management section:
+- Quantitative Aptitude materials
+- Verbal Ability resources
+- Data Interpretation guides
+- Previous year papers
+- Study materials
 
 ## Usage
 
