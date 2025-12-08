@@ -83,6 +83,6 @@ CATbot/
 - **API Key Errors**: Make sure your `.env` file is in the root directory
 - **Pinecone Connection**: Verify your Pinecone environment region
 - **No Documents**: Ensure PDFs are in the `data/` folder before processing
-- **Import Errors**: Run `pip install -r requirements.txt` again
+- **Import Errors**: Run `pip install -r requirements.txt` in a virtual env
 
 
