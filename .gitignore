@@ -10,4 +10,6 @@ venv/
 *.log
 .DS_Store
 data/*.pdf
+*.db
+temp_*.pdf
 
