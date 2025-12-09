@@ -33,22 +33,24 @@ PINECONE_INDEX_NAME=cat-exam-prep
 - OpenAI: https://platform.openai.com/api-keys
 - Pinecone: https://app.pinecone.io/ (sign up for free tier)
 
-### 3. Add Documents
 
-Place your CAT exam preparation PDFs in the `data/` directory:
-- Quantitative Aptitude materials
-- Verbal Ability resources
-- Data Interpretation guides
-- Previous year papers
-- Study materials
-
-### 4. Run the Application
+### 3. Run the Application
 
 ```bash
 streamlit run app.py
 ```
 
 The app will open in your browser at `http://localhost:8501`
+
+
+### 4. Add Documents
+
+Place your CAT exam preparation PDFs in the Document Management section:
+- Quantitative Aptitude materials
+- Verbal Ability resources
+- Data Interpretation guides
+- Previous year papers
+- Study materials
 
 ## Usage
 
@@ -81,45 +83,6 @@ CATbot/
 - **API Key Errors**: Make sure your `.env` file is in the root directory
 - **Pinecone Connection**: Verify your Pinecone environment region
 - **No Documents**: Ensure PDFs are in the `data/` folder before processing
-- **Import Errors**: Run `pip install -r requirements.txt` again
+- **Import Errors**: Run `pip install -r requirements.txt` in a virtual env
 
-## GitHub Setup
-
-### Creating a GitHub Repository
-
-1. **Create a new repository on GitHub:**
-   - Go to https://github.com/new
-   - Name it (e.g., `cat-exam-prep-chatbot`)
-   - Choose public or private
-   - **Don't** initialize with README (we already have one)
-
-2. **Push your code to GitHub:**
-   ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-   git branch -M main
-   git push -u origin main
-   ```
-
-3. **Verify API keys are protected:**
-   - Your `.env` file is already in `.gitignore`
-   - Never commit `.env` files
-   - Use `env.example` as a template for others
-
-### Security Notes
-
-✅ **Protected (in .gitignore):**
-- `.env` - Your actual API keys
-- `venv/` - Virtual environment
-- `data/*.pdf` - Your documents
-- `__pycache__/` - Python cache files
-
-✅ **Safe to commit:**
-- `env.example` - Template without real keys
-- All Python files
-- `requirements.txt`
-- `README.md`
-
-## License
-
-MIT
 
